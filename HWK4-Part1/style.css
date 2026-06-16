@@ -1,0 +1,117 @@
+/*Styles the page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #171515;
+  margin: 0;
+  padding: 30px;
+}
+/* this will keep the content centered and not too wide*/
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+/* main title */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+/* form of box */
+.form-box {
+  background-color: white;
+  border: 1px solid #c9c5c5;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+/* Adds space between form items*/
+.form-group {
+  margin-bottom: 15px;
+}
+/* Put each label above its input */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+/* Style input boxes */
+input {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #999;
+  box-sizing: border-box;
+}
+/*style the button */
+button {
+  padding: 10px 18px;
+  font-size: 16px;
+  border: none;
+  background-color: #0a4780;
+  color: white;
+  cursor: pointer;
+}
+/* Change button color when the mouse is over it*/
+button:hover {
+  background-color: #163a59;
+}
+input.error {
+  border: 2px solid #a92516;
+  background-color: #fdecea;
+}
+label.error {
+  color: #8a1f11;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+/*Makes the table area scroll if the table is too big*/
+.tableWrapper {
+  background-color: white;
+  border: 1px solid #ccc;
+  overflow: auto;
+  max-width: 100%;
+  max-height: 420px;
+}
+/* Style the table */
+table {
+  border-collapse: collapse;
+  width: max-content;
+  min-width: 100%;
+}
+/* Styles for all table cells */
+th,td {
+  border: 1px solid #666;
+  padding: 10px;
+  text-align: center;
+  min-width: 60px;
+}
+/* Keeps the top header row fixed*/
+thead th {
+  position: sticky;
+  top: 0;
+  background-color: #222;
+  color: white;
+  z-index: 2;
+}
+/* Keeps the first column fixed */
+tbody th {
+  position: sticky;
+  left: 0;
+  background-color: #222;
+  color: white;
+  z-index: 1;
+}
+/*Keep the top left corner above the other headers */
+thead th:first-child {
+  left: 0;
+  z-index: 3;
+}
+/* give even rows a gray color */
+tbody tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+/* Give odd rows a yellow color */
+tbody tr:nth-child(odd) td {
+  background-color: #fff8dc;
+}
